@@ -1,0 +1,7 @@
+H1 ste H6 - tags de titulo
+P - paragrafo
+A - link
+UL e LI = listas em HTML
+div = cria divisões
+img = visualização de Imagens
+HR = linhas de divisão

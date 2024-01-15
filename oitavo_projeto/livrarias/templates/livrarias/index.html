@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de produtos</title>
+</head>
+<body background="{% static 'images/fundo.png' %} " >
+    <div style="width: 900px; margin: 20px auto">
+        <img src="{% static 'images/logo.png' %}" alt="213">
+        <a href="#"style="margin-left: 50% ">livrarias</a> |
+        <a href="#">Quem Somos</a> |
+        <a href="#">Contatos</a>
+        <div>
+        <div style="width: 890px; margin: 0px auto"></div>
+        <img src="{% static 'images/capa.png' %}">
+            <div style="width: 900px; margin: 0px auto">
+                {% for produto in produtos %}
+            <div style="width: 250px; display: inline-block;">
+                <h3>nome: produto</h3>
+            <p>descrição Lorem ipsum dolor sit amet.</p>
+            <p><categoria:higiene/p>
+            <hr>
+            <span>preço: R$ 40,90/span>
+            <br>
+            <a href="#">Saiba Mais </a>
+        </div>
+        <div style="width: 250px; display: inline-block;">
+            <h3>nome: {{produto.nome_produto}}</h3>
+            <p>descrição Lorem ipsum dolor sit amet.</p>
+            <p><categoria:higiene/p>
+            <hr>
+            <span>preço: R$ 40,90/span>
+            <br>
+            <a href="#">Saiba Mais </a>
+        </div>
+        {% endfor %}
+    </div>   
+</body>
+</html>
